@@ -17,11 +17,66 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.mainImage{
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.astronaut-count{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.astronauts {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px auto;
+
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.moonsContainerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moonsContainerCol * {
+  margin-bottom: 10px;
+}
+
+.moonsContainerRow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 1 1 1;
+  width: 80%;
+}
+
+.moonsContainerRow * {
+  text-align: center;
+  flex: 1;
+  margin: auto;
 }
