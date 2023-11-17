@@ -23,8 +23,7 @@ planetData.forEach((planet) => {
     // console.log(planet)
   } )
 
-  // return
-  console.log(dataCache);
+  return dataCache;
 };
 
 export const getCachedData = () => {
