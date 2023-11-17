@@ -3,10 +3,12 @@ import useMoons from "@/app/components/useMoons";
 import { planetData } from "@/app/components/db";
 
 const Planet = async ({ params }) => {
-  let plnt = params.planet === "Venus" ? "Vénus" : params.planet;
-  plnt = params.planet === "Earth" ? "La Terre" : params.planet;
-
-  console.log(plnt);
+  let plnt = params.planet;
+  if (params.planet === "Venus") {
+    plnt = "Vénus";
+  } else if (params.planet === "Earth") {
+    plnt = "La Terre";
+  }
 
   const data = await useMoons(plnt); // note must be the French name, as this matches the moon names
 
