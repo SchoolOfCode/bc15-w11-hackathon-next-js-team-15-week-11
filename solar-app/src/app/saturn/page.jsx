@@ -1,5 +1,7 @@
 import React from "react";
 import useMoons from "../components/useMoons";
+import Link from "next/link";
+
 
 const Saturn = async () => {
   const data = await useMoons("Saturne"); // note must be the French name, as this matches the moon names

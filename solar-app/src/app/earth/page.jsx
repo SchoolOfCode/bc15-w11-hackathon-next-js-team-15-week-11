@@ -1,6 +1,8 @@
 import React from "react";
 import useMoons from "../components/useMoons";
 import CustomDirectionButton from "../components/CustomDirectionButton";
+import Link from "next/link";
+
 
 
 const LaTerre = async () => {

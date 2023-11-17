@@ -1,5 +1,6 @@
 import ResponsiveImageWithHotspots from "./components/ResponsiveImageWithHotspots";
 import { fetchData } from "./components/planetDataCache";
+import Link from "next/link";
 
 
 const hotspots = [
