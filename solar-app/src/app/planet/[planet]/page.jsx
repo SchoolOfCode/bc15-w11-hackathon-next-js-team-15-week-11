@@ -1,16 +1,41 @@
 import React from "react";
 import useMoons from "@/app/components/useMoons";
+import { planetData } from "@/app/components/db";
 
 const Planet = async ({ params }) => {
-  console.log("params: ", params);
+  let plnt = params.planet === "Venus" ? "Vénus" : params.planet;
+  plnt = params.planet === "Earth" ? "La Terre" : params.planet;
 
-  const plnt = (params.planet === "Venus" ? "Vénus" : params.planet);
+  console.log(plnt);
 
   const data = await useMoons(plnt); // note must be the French name, as this matches the moon names
 
+
+  const plntData = planetData[plnt];
+
   return (
     <div>
-      <h1 className="planet-name">{data.planet.englishName}</h1>
+      <h1 className="planet-name">{plntData.name}</h1>
+
+      <p className="description">{plntData.description}</p>
+
+      {/* <Image className="planet-image" src={plntData.image} alt={`image of ${plntData.name}`}></Image> */}
+      <img
+        className="planet-image"
+        src={plntData.image}
+        alt={`image of ${plntData.name}`}
+        style={{ width: "60%" }} // Adjust the width value accordingly
+      />
+
+      <ul className="facts">
+        <li className="distance planet-data">Distance: {plntData.distance}</li>
+        <li className="radius planet-data">Radius: {plntData.radius}</li>
+        <li className="temperature planet-data">Temperature: {plntData.temperature}</li>
+        <li className="day planet-data">Day: {plntData.day}</li>
+        <li className="year planet-data">Year: {plntData.year}</li>
+        <li className="moons planet-data">Number of moons: {plntData.moons}</li>
+      </ul>
+
       <h2>Moons</h2>
       <div className="moonsContainerCol">{data.moons}</div>
     </div>

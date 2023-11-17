@@ -1,5 +1,3 @@
-import {planetData} from "./db.jsx"
-
 
 let dataCache = null;
 
@@ -17,11 +15,11 @@ export const fetchData = async () => {
     return accum;
   }, {});
 
-planetData.forEach((planet) => {
-  dataCache[planet.frenchName] = {
-    ...dataCache[planet.frenchName], planet}
-    // console.log(planet)
-  } )
+// planetData.forEach((planet) => {
+//   dataCache[planet.frenchName] = {
+//     ...dataCache[planet.frenchName], planet}
+//     // console.log(planet)
+//   } )
 
   return dataCache;
 };
