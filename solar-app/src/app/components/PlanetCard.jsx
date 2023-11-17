@@ -13,21 +13,21 @@ const {name, distance, radius, temperature, day, year, moons, image, description
 return (
     <>
     <div>
-        <h1>{name}</h1>
-        <p>{description}</p>
+        <h1 className="planet-name" >{name}</h1>
+        <p className="description">{description}</p>
         <Image 
             src={image} 
             alt={`image of ${name}`} 
             width:{} 
             height{} 
             />
-        <ul>
-            <li>{distance}</li>
-            <li>{radius}</li>
-            <li>{temperature}</li>
-            <li>{day}</li>
-            <li>{year}</li>
-            <li>{moons}</li>
+        <ul className="facts">
+            <li className="distance">{distance}</li>
+            <li className="radius">{radius}</li>
+            <li className="temperature">{temperature}</li>
+            <li className="day">{day}</li>
+            <li className="year">{year}</li>
+            <li className="moons">{moons}</li>
         </ul>
 
     </div>

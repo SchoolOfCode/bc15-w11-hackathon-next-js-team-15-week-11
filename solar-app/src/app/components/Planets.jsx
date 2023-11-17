@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PlanetCard from "./PlanetCard";
-import { planetData } from "../components/db";
+import { planetData } from "./db";
 
 const Planet = ({data}) => {
     return (
