@@ -36,3 +36,16 @@ export default function CustomButton({ url, left, right }) {
     </div>
   );
 }
+
+
+
+test("when button is clicked, it leads to the url it's intended to go to", () => {
+
+  //render
+
+  //locate
+    //fireclick the button
+  //assert
+
+
+});
