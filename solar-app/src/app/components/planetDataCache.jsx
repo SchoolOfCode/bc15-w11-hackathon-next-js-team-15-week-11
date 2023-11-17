@@ -1,9 +1,15 @@
+import {planetData} from "./db.jsx"
+
+
 let dataCache = null;
+
 
 export const fetchData = async () => {
   // Perform the initial data fetch here
   const response = await fetch("https://api.le-systeme-solaire.net/rest/bodies");
   const data = await response.json();
+
+// console.log(planetData)
 
   // Store the fetched data in the cache
   const dataCache = data.bodies.reduce((accum, body) => {
@@ -11,7 +17,14 @@ export const fetchData = async () => {
     return accum;
   }, {});
 
-  return dataCache;
+planetData.forEach((planet) => {
+  dataCache[planet.frenchName] = {
+    ...dataCache[planet.frenchName], planet}
+    // console.log(planet)
+  } )
+
+  // return
+  console.log(dataCache);
 };
 
 export const getCachedData = () => {

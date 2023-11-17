@@ -15,15 +15,20 @@ return (
     <div>
         <h1>{name}</h1>
         <p>{description}</p>
-        <Image src={image} alt={`image of ${name}`} width:{} height{} />
-        <ol>
+        <Image 
+            src={image} 
+            alt={`image of ${name}`} 
+            width:{} 
+            height{} 
+            />
+        <ul>
             <li>{distance}</li>
             <li>{radius}</li>
             <li>{temperature}</li>
             <li>{day}</li>
             <li>{year}</li>
             <li>{moons}</li>
-        </ol>
+        </ul>
 
     </div>
 

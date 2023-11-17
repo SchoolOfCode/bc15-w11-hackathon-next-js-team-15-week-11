@@ -1,7 +1,8 @@
-[
+export const planetData = [
     {
         "id:": "1",
         "name": "Mercury",
+        "frenchName": "Mecure",
         "distance": "57,910,000 km",
         "radius": "2,440km",
         "temperature": "High: 430°C, Low: -180°C",
@@ -14,6 +15,7 @@
     {
         "id:": "2",
         "name": "Venus",
+        "frenchName": "Vénus",
         "distance": "108,200,000 km",
         "radius": "6,052 km",
         "temperature": "438 to 482°C",
@@ -26,6 +28,7 @@
     {
         "id:": "3",
         "name": "Earth",
+        "frenchName": "La Terre",
         "distance": "149,600,000 km",
         "radius": "6,371 km",
         "temperature": "14°C",
@@ -38,6 +41,7 @@
     {
         "id:": "4",
         "name": "Mars",
+        "frenchName": "Mars",
         "distance": "227,940,000 km",
         "radius": "3,400 km",
         "temperature": "-153 to 20 °C",
@@ -50,6 +54,7 @@
     {
         "id:": "5",
         "name": "Jupiter",
+        "frenchName": "Jupiter",
         "distance": "778,330,000 km",
         "radius": "71,492 km",
         "temperature": "-108 °C",
@@ -62,6 +67,7 @@
     {
         "id:": "6",
         "name": "Saturn",
+        "frenchName": "Saturne",
         "distance": "1,424,600,000 km",
         "radius": "60,268 km",
         "temperature": "-138 °C",
@@ -74,6 +80,7 @@
     {
         "id:": "7",
         "name": "Uranus",
+        "frenchName": "Uranus",
         "distance": "2,873,550,000 km",
         "radius": "25,559 km ",
         "temperature": "-195 °C",
@@ -86,6 +93,7 @@
     {
         "id:": "8",
         "name": "Neptune",
+        "frenchName": "Uranus",
         "distance": "4,501,000,000 km",
         "radius": "24,764 km",
         "temperature": "-201 °C",
